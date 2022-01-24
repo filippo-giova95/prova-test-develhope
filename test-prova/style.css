@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.card {
+    width: 350px;
+    height: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.nav-card {
+    display: flex;
+    overflow: hidden;
+    background-color: darkgray;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 9px 20px;
+}
+
+.logo-user {
+    display: flex;
+}
+
+.logo-card {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    margin-right: 15px;
+}
+
+.nav-card h1 {
+    font-size: 1em;
+}
+
+.image-box {
+    height: 300px;
+    width: 100%;
+}
+
+.image-box img {
+    height: 100%;
+}
+
+.post {
+    background-color: lightgray;
+    height: 100%;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 0.8em;
+}
+
+.icone {
+    padding-bottom: 0.4em;
+}
+
+.icone img:first-child {
+    padding-right: 1em;
+}
+
+.strong {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 900px) {
+
+
+    main {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        padding-left: 1em;
+    }
+
+    .card {
+
+        margin-top: 2em;
+    }
+}
